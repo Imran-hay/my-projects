@@ -1,0 +1,7 @@
+                      key
+-> admin_u contains the user name and password of admin(the first cell is user name and the second is password)
+-> user contains the user name and password of user(the first cell is user name and the second is password)
+-> data contains drug information
+-> sales contains sales information
+-> size contains the size of data and sales respectivly
+    i.e if you manually change either data or sales,modify the size based on your changes
