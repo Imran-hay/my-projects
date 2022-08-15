@@ -1,0 +1,403 @@
+* ,*::after ,*::before{
+    box-sizing: border-box;
+}
+ 
+.container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: rgb(236, 223, 223);
+    transition:200ms ease-in-out;
+    border: 2px solid black;
+    z-index: 10;
+    margin-top: 3%;
+    width: 100%;
+    height: 80%;
+    border-radius: 4% 4%; 
+}
+.header{
+    padding: 1px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+}
+.input #username,#password{
+    border: 1px solid white;
+    margin-bottom:9px ;
+    margin-left:10%;
+    width: 80%;
+    height: 3em; 
+    border-radius: 0.4em;     
+}
+.food-inside-cart{
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 80%;
+    overflow-x: hidden;
+}
+hr{
+      
+    width: 80%;
+     background-color: rgb(39, 41, 41);
+}
+.text{
+    margin-left: 1.3em;
+}
+.container.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+.container .close{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: 1em;
+    font-size: 160%;
+    font-weight: 700;
+}
+#overlay{
+    position: fixed;
+    opacity:0 ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition:200ms ease-in-out;
+    background-color: rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events:all;
+}
+
+
+.container  {
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 1px solid red;
+}
+.active{
+    border-bottom: 1px solid red;
+
+}
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}  
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+.btn-primary {
+    color: white;
+    background-color:#3a217e;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color:#e9b91e;;
+}
+.shop-item {
+    margin: 30px;
+}
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+.shop-item-image {
+    height: 250px;
+}
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin-left: 1.6em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.cart-cont span{
+    font-size: x-large;
+}
+ 
+.food-incart-price{
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 4%;
+    font-size: 2em;
+    color: #333;
+}
+.cart-quantity {
+    width: 30%;
+}
+.food-incart-name{
+    color: #333;
+    margin-left: .5em;
+    font-size: 3em;
+}
+.food-incart-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    margin-left: 7%;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+.shop-item-image:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+
+* ,*::after ,*::before{
+    box-sizing: border-box;
+}
+ 
+
+.containerpay{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: #cadfe7;
+    transition:200ms ease-in-out;
+    border: 2px solid black;
+    z-index: 10;
+    width: 30%;
+    height: 40%;
+    max-width: 80%;
+    border-radius: 4% 4%; 
+}
+.headerpay{
+    padding: 1px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.paybank{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 250%;
+    border: #333 solid 1px;
+    text-shadow: #333 2px;
+    height: 40%;
+    font-weight: 600;
+}
+.cbe{
+    display: flex;
+    width: 100%;
+    margin-left: 1em;
+}
+.cbe:hover{
+    background-color: #56CCF2;
+    width: 93.5%;
+}
+
+.text{
+    margin-left: 1.3em;
+}
+.containerpay.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+.containerpay .close{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+#overlay1{
+    position: fixed;
+    opacity:0 ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition:200ms ease-in-out;
+    background-color: rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events:all;
+}
+
+
+
+@media (max-width: 984px) {
+    .container{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background-color: rgb(168, 21, 21);
+        transition:200ms ease-in-out;
+        border: 2px solid black;
+        z-index: 10;
+        margin-top: 5%;
+        width: 100%;
+        height: 70%;
+        border-radius: 4% 4%; 
+    }
+    .containerpay{
+        width: 50%;
+        height: 40%;
+        max-width: 80%;
+        border-radius: 4% 4%; 
+    }
+     
+  }
+  
+  @media (max-width: 640px) {
+    .food-inside-cart{
+       margin-left: -5%;
+      font-size: small;  
+     }
+     .food-incart-price{
+     margin-left: 20%;
+    }
+     #signin{
+         font-size: large;
+     }
+     .cart-quantity-input {
+        height: 23px;
+        width: 30px;
+        margin-left: 6%;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    .btnRemv{
+        margin-top: -1.4px;
+        width: 50px;
+        font-size: 70%;
+    }
+    .food-incart-price{
+        font-size: 5px;
+    }
+    .containerpay{
+        width: 70%;
+      
+    }
+    }
+
+
+  
+  
+
+
+
+
+
